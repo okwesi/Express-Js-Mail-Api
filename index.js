@@ -1,10 +1,12 @@
 const express = require("express")
-const postRoute = require('./routes/post')
+const route = require('./src/router')
 
 const app = express()
 const port = 5000;
 
-app.use('/post', postRoute)
+app.use(express.json());
+
+app.use('/', route)
 
 
 
