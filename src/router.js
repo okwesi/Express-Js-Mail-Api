@@ -3,6 +3,6 @@ const controller = require('./controller')
 const router = express.Router();
 
 
-router.get("/home", controller.helloWorld)
+router.post("/", controller.sendMail)
 
 module.exports = router
